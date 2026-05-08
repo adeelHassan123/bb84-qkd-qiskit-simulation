@@ -1,0 +1,16 @@
+BB84 QUANTUM KEY DISTRIBUTION RESULTS
+==================================================
+
+ALICE'S DATA:
+  Bits:  [0, 1, 1, 1, 1, 0, 0, 1]
+  Bases: ['+', 'x', 'x', '+', '+', 'x', 'x', 'x']
+  States:['|0⟩', '|-⟩', '|-⟩', '|1⟩', '|1⟩', '|+⟩', '|+⟩', '|-⟩']
+
+BOB'S DATA:
+  Bases:  ['x', '+', '+', '+', 'x', '+', 'x', '+']
+  Results:[0, 0, 1, 1, 1, 1, 0, 0]
+
+RESULTS:
+  Overall Accuracy: 62.5%
+  Matching Bases Accuracy: 100.0%
+  Mismatching Bases Accuracy: 50.0%

@@ -25,8 +25,6 @@ python main.py
 ```
 bb84-qkd-qiskit/
 ├── src/           # Source code modules
-├── circuits/      # Generated circuit diagrams
-├── screenshots/   # Output screenshots
 ├── report/        # Lab report
 └── output/        # Simulation results
 ```

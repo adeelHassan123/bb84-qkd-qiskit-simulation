@@ -18,6 +18,4 @@ GATE_H = [[1/1.414, 1/1.414], [1/1.414, -1/1.414]]
 
 # File paths
 CIRCUIT_DIR = "circuits"
-SCREENSHOT_DIR = "screenshots"
 OUTPUT_DIR = "output"
-REPORT_DIR = "report"

@@ -1,7 +1,8 @@
 # Bob: Receiver -> chooses bases, measures qubits
 
 import random
-from qiskit import Aer, execute
+from qiskit import QuantumCircuit, transpile
+from qiskit_aer import Aer
 
 class Bob:
     def __init__(self):
@@ -27,9 +28,14 @@ class Bob:
         # Measure
         qc.measure(0, 0)
         
-        # Run simulation
+        # NEW QISKIT 1.0+ METHOD
         simulator = Aer.get_backend('qasm_simulator')
-        job = execute(qc, simulator, shots=1)
+        
+        # Transpile the circuit for the backend
+        compiled_circuit = transpile(qc, simulator)
+        
+        # Run the simulation
+        job = simulator.run(compiled_circuit, shots=1)
         result = job.result()
         counts = result.get_counts()
         
